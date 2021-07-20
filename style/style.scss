@@ -8,20 +8,63 @@ $ColTitles: #222222;
 $ColMainText:#666666;
 $ColMainBG: #FFFFFF;
 $ColSecondaryBG: #C4C4C4;
+$MainBackGround: #E5E5E5;
 
 //fonts
 
+//general tags
 
+html{
+  font-size: 18px;
+}
+
+h1{
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+  color: $ColTitles;
+}
+h2{
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5em;
+  color: $ColTitles;
+}
+h3{
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.3em;
+  color: $ColTitles;
+}
+.mainText{
+  color: $ColMainText;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 45%;
+  line-height: 1rem;
+}
 
 *{
   margin: 0;
   padding: 0;
-  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   @media screen and (max-width: 600px){
     font-size: 9px;
   }
+}
+body{
+  background-color: $MainBackGround;
 }
 header{
     padding: 2rem 0;
@@ -46,6 +89,7 @@ header{
   }
 }
 .firstScreen{
+  margin-bottom: 3rem;
   .innerBlock{
     position: relative;
     height: 30rem;
@@ -58,39 +102,62 @@ header{
       top: 0;
       z-index: -1;
     }
-    h1{
-      display: block;
-      width: 70%;
-      font-weight: bold;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      line-height: 1.5em;
-      color: $ColTitles;
-    }
-    p{
-      display: block;
-      color: $ColMainText;
-      font-size: 1rem;
-      margin-bottom: 2rem;
-      width: 45%;
-      line-height: 2em;
-    }
     .buttonCatalogue{
+      display: block;
+      width: 10rem;
       padding: 1rem 2rem;
       background-color: $ColYellow;
       text-decoration: none;
       color: black;
       font-size: 1rem;
       border-radius: 2rem;
+      i{
+        margin-left: 0.5rem;
+      }
       &:hover{
         text-decoration: none;
+        transform: scale(1.1);
+        transition: 0.8s linear;
       }
     }
   }
 
 }
 
+.whyWeAre{
+  img{
+    width: 100%;
+  }
+  .mainText{
+    width: 100%;
+  }
+  .rightColumn{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    h3{
+      text-transform: uppercase;
+    }
+  }
+}
+
 @media screen and (max-width: 800px){
+  html{
+    font-size: 20px;
+  }
+  h1{
+    width: 100%;
+  }
+  h2{
+    width: 100%;
+  }
+  .mainText{
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .firstScreen{
     .innerBlock{
       position: relative;
@@ -103,15 +170,6 @@ header{
         width: 100%;
         position: static;
         margin-bottom: 2rem;
-      }
-      h1{
-        width: 100%;
-        text-align: center;
-      }
-      p{
-        text-align: center;
-        width: 100%;
-        font-size: 1.5rem;
       }
 
     }

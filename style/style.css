@@ -1,15 +1,55 @@
 @import url(bootstrap-grid.min.css);
 @import url(bootstrap-reboot.min.css);
 @import url(bootstrap.min.css);
+html {
+  font-size: 18px; }
+
+h1 {
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+  color: #222222; }
+
+h2 {
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5em;
+  color: #222222; }
+
+h3 {
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.3em;
+  color: #222222; }
+
+.mainText {
+  color: #666666;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 45%;
+  line-height: 1rem; }
+
 * {
   margin: 0;
   padding: 0;
-  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box; }
   @media screen and (max-width: 600px) {
     * {
       font-size: 9px; } }
+
+body {
+  background-color: #E5E5E5; }
 
 header {
   padding: 2rem 0; }
@@ -27,42 +67,62 @@ header {
     header #burgerMenu img {
       width: 100%; }
 
-.firstScreen .innerBlock {
-  position: relative;
-  height: 30rem;
-  padding-top: 5rem; }
-  .firstScreen .innerBlock img {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1; }
-  .firstScreen .innerBlock h1 {
-    display: block;
-    width: 70%;
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.5em;
-    color: #222222; }
-  .firstScreen .innerBlock p {
-    display: block;
-    color: #666666;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    width: 45%;
-    line-height: 2em; }
-  .firstScreen .innerBlock .buttonCatalogue {
-    padding: 1rem 2rem;
-    background-color: #FDF089;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    border-radius: 2rem; }
-    .firstScreen .innerBlock .buttonCatalogue:hover {
-      text-decoration: none; }
+.firstScreen {
+  margin-bottom: 3rem; }
+  .firstScreen .innerBlock {
+    position: relative;
+    height: 30rem;
+    padding-top: 5rem; }
+    .firstScreen .innerBlock img {
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1; }
+    .firstScreen .innerBlock .buttonCatalogue {
+      display: block;
+      width: 10rem;
+      padding: 1rem 2rem;
+      background-color: #FDF089;
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      border-radius: 2rem; }
+      .firstScreen .innerBlock .buttonCatalogue i {
+        margin-left: 0.5rem; }
+      .firstScreen .innerBlock .buttonCatalogue:hover {
+        text-decoration: none;
+        transform: scale(1.1);
+        transition: 0.8s linear; }
+
+.whyWeAre img {
+  width: 100%; }
+.whyWeAre .mainText {
+  width: 100%; }
+.whyWeAre .rightColumn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start; }
+  .whyWeAre .rightColumn h3 {
+    text-transform: uppercase; }
 
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 20px; }
+
+  h1 {
+    width: 100%; }
+
+  h2 {
+    width: 100%; }
+
+  .mainText {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
+
   .firstScreen .innerBlock {
     position: relative;
     padding-top: 1rem;
@@ -73,14 +133,7 @@ header {
     .firstScreen .innerBlock img {
       width: 100%;
       position: static;
-      margin-bottom: 2rem; }
-    .firstScreen .innerBlock h1 {
-      width: 100%;
-      text-align: center; }
-    .firstScreen .innerBlock p {
-      text-align: center;
-      width: 100%;
-      font-size: 1.5rem; } }
+      margin-bottom: 2rem; } }
 .narrowRight {
   position: relative; }
   .narrowRight:after {
