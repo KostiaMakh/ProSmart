@@ -49,7 +49,7 @@ h3 {
       font-size: 9px; } }
 
 body {
-  background-color: #E5E5E5; }
+  background-color: #FFFFFF; }
 
 header {
   padding: 2rem 0; }
@@ -95,18 +95,56 @@ header {
         transform: scale(1.1);
         transition: 0.8s linear; }
 
-.whyWeAre img {
-  width: 100%; }
-.whyWeAre .mainText {
-  width: 100%; }
-.whyWeAre .rightColumn {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start; }
-  .whyWeAre .rightColumn h3 {
-    text-transform: uppercase; }
+.whyWeAre {
+  margin-bottom: 3rem; }
+  .whyWeAre img {
+    width: 100%; }
+  .whyWeAre .mainText {
+    width: 100%; }
+  .whyWeAre .rightColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start; }
+    .whyWeAre .rightColumn h3 {
+      text-transform: uppercase; }
+
+.ourBenefits {
+  margin-bottom: 3rem; }
+  .ourBenefits .innerBl {
+    display: flex;
+    padding: 0 10%; }
+  .ourBenefits .benefitBl {
+    max-width: 90%;
+    margin: auto; }
+    .ourBenefits .benefitBl .icon {
+      width: 65px;
+      height: 65px;
+      display: block;
+      background-color: #FDF089;
+      position: relative;
+      margin-bottom: 2rem; }
+      .ourBenefits .benefitBl .icon:after {
+        display: block;
+        content: "";
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: -15px;
+        right: -15px; }
+    .ourBenefits .benefitBl .ben1:after {
+      background-image: url("../img/pagesStructure/award 1.png"); }
+    .ourBenefits .benefitBl .ben2:after {
+      background-image: url("../img/pagesStructure/chair (1) 1.png"); }
+    .ourBenefits .benefitBl .ben3:after {
+      background-image: url("../img/pagesStructure/hourglass 1.png"); }
+    .ourBenefits .benefitBl .ben4:after {
+      background-image: url("../img/pagesStructure/layers (1) 1.png"); }
+    .ourBenefits .benefitBl .ben5:after {
+      background-image: url("../img/pagesStructure/price-tag 1.png"); }
 
 @media screen and (max-width: 800px) {
   html {
@@ -120,7 +158,6 @@ header {
 
   .mainText {
     width: 100%;
-    font-size: 1.5rem;
     line-height: 1.5rem; }
 
   .firstScreen .innerBlock {
@@ -133,7 +170,13 @@ header {
     .firstScreen .innerBlock img {
       width: 100%;
       position: static;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem; }
+
+  .ourBenefits .innerBl {
+    padding: 0;
+    flex-wrap: wrap; }
+  .ourBenefits .benefitBl {
+    width: 50%; } }
 .narrowRight {
   position: relative; }
   .narrowRight:after {

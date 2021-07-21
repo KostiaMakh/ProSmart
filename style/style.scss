@@ -10,8 +10,6 @@ $ColMainBG: #FFFFFF;
 $ColSecondaryBG: #C4C4C4;
 $MainBackGround: #E5E5E5;
 
-//fonts
-
 //general tags
 
 html{
@@ -64,7 +62,7 @@ h3{
   }
 }
 body{
-  background-color: $MainBackGround;
+  background-color: $ColMainBG;
 }
 header{
     padding: 2rem 0;
@@ -125,6 +123,7 @@ header{
 }
 
 .whyWeAre{
+  margin-bottom: 3rem;
   img{
     width: 100%;
   }
@@ -143,30 +142,86 @@ header{
   }
 }
 
-@media screen and (max-width: 800px){
-  html{
+.ourBenefits{
+  margin-bottom: 3rem;
+  .innerBl{
+    display: flex;
+    padding: 0 10%;
+  }
+  .benefitBl{
+    max-width: 90%;
+    margin: auto;
+    .icon{
+      width: 65px;
+      height: 65px;
+      display: block;
+      background-color: $ColYellow;
+      position: relative;
+      margin-bottom: 2rem;
+      &:after{
+        display: block;
+        content: "";
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+      }
+    }
+    .ben1{
+      &:after {
+        background-image: url("../img/pagesStructure/award 1.png");
+      }
+    }
+    .ben2 {
+      &:after {
+        background-image: url("../img/pagesStructure/chair (1) 1.png");
+      }
+    }
+    .ben3{
+      &:after {
+        background-image: url("../img/pagesStructure/hourglass 1.png");
+      }
+    }
+    .ben4{
+      &:after {
+        background-image: url("../img/pagesStructure/layers (1) 1.png");
+      }
+    }
+    .ben5{
+      &:after {
+        background-image: url("../img/pagesStructure/price-tag 1.png");
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
     font-size: 20px;
   }
-  h1{
+  h1 {
     width: 100%;
   }
-  h2{
+  h2 {
     width: 100%;
   }
-  .mainText{
+  .mainText {
     width: 100%;
-    font-size: 1.5rem;
     line-height: 1.5rem;
   }
-  .firstScreen{
-    .innerBlock{
+  .firstScreen {
+    .innerBlock {
       position: relative;
       padding-top: 1rem;
       height: auto;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      img{
+
+      img {
         width: 100%;
         position: static;
         margin-bottom: 2rem;
@@ -175,9 +230,16 @@ header{
     }
 
   }
-
+  .ourBenefits {
+    .innerBl {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    .benefitBl {
+      width: 50%;
+    }
+  }
 }
-
 
 //general classes
 .narrowRight{
